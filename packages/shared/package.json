@@ -1,0 +1,16 @@
+{
+  "name": "package-shared",
+  "version": "1.0.0",
+  "exports": {
+    ".": "./dist/index.js",
+    "./*": "./dist/*.js",
+    "./utils": "./dist/utils/index.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.1.3"
+  },
+  "scripts": {
+    "build": "tsc --build",
+    "test": "echo test $(pwd)"
+  }
+}

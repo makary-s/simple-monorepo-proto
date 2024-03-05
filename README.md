@@ -2,11 +2,11 @@
 
 ## Purpose
 
-The goal of this template is to provide a simple and convenient way of organizing TypeScript projects that meet the following criteria:
+The goal of this template is to provide a simple way of organizing TypeScript projects that meet the following criteria:
 
 - Do not require additional dependencies for managing a monorepository.
 - Can be easily integrated into existing projects with minimal effort.
-- Allow referencing neighboring packages without the need for their prior compilation and installation.
+- Allow referencing neighboring packages without the need for their prior build.
 
 ## Requirements
 
@@ -19,16 +19,16 @@ The goal of this template is to provide a simple and convenient way of organizin
 
 NPM Workspaces is a key feature of this template, which:
 
-- Works "out of the box" without the need for additional setup.
-- Allows easy referencing of neighboring packages.
+- Allows referencing of neighboring packages without extra configuration.
 - Optimizes the organization of dependencies within the node_modules directory.
-- Provides the ability to run commands for multiple packages simultaneously.
+- Letting you run commands across several projects at once.
+- Works "out of the box" without the need for additional setup or builder.
 
 ### TypeScript Project References
 
-- Allows TypeScript to automatically determine the order of project source code compilation, taking into account inter-package dependencies.
 - Prevents the need to rebuild packages if their code has not been modified.
 - Enhances performance when working with the codebase in TypeScript-supporting editors.
+- Helps TypeScript figure out the best build order, considering project dependencies.
 
 ## Setup Method
 
